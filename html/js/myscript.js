@@ -106,7 +106,15 @@ jQuery(document).ready(function() {
 		speed: 700
 	});
 	
-	
+  
+// $('.home_background').jCarouselLite({
+//   btnNext: '.next',
+//   btnPrev: '.prev'
+// });
+// 	
+$('.carousel-inner').carousel( {
+  interval: 1000  
+});
 	//PrettyPhoto
 	$("a[rel^='prettyPhoto']").prettyPhoto();
 	
@@ -152,17 +160,18 @@ function scrolled_menu() {
 //Home Height
 function sliderHeight(){
 	wh = $(window).height();
-	$('#home').css({height:wh});
+	$('#home').css({height:803+74});
+	// $('#home_carousel').css({height:wh-74});
 	
 }
 
 //Welcome Block Vertical Align
 function mymargtop() {
 	var body_h = $(window).height();
-	var container_h = $('.welcome_block').height();	
+	var container_h = $('.welcome_text').height();	
 	var marg_top = Math.abs((body_h - container_h)/2);	
-	$('.welcome_block').css('padding-top', marg_top);
-	$('.welcome_block').css('padding-bottom', marg_top);
+	$('.welcome_text').css('padding-top', marg_top);
+	$('.welcome_text').css('padding-bottom', marg_top);
 }
 
 
