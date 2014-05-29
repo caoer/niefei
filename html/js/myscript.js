@@ -1,5 +1,6 @@
 var fixed_menu = true;
 window.jQuery = window.$ = jQuery;
+var topMenuOpen = false;
 
 /* Custom Scripts */
 
@@ -28,6 +29,22 @@ function calculateScroll() {
 
 
 jQuery(document).ready(function() {
+
+  $("#menu-top").on("click", function(e){
+    e.preventDefault();
+    $("#hidden-top").show();
+    if (topMenuOpen) {
+      $("#page").animate({ marginTop: 74 }, "slow", function(){
+        console.log("placeholder");
+      });
+    } else {
+      $("#page").animate({ marginTop: 200 }, "slow", function(){
+        console.log("placeholder");
+      });
+    }
+    topMenuOpen = !topMenuOpen;
+  });
+
 	//Fixed Menu
 	if (jQuery('.fixed-menu').size() && fixed_menu == true) {
 
