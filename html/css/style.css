@@ -280,7 +280,7 @@ a.menu_toggler { display:none;
 /* carousel background */
 .home_background {
   overflow: hidden;
-  max-height: 877px;
+  /* max-height: 877px; */
   padding-top: 74px;
 }  
 
@@ -313,8 +313,16 @@ html,body{height:100%;}
   width: 100%;
   min-height: 803px;
   min-width: 1140px;
+  height: auto;
 }
 
+#slide-background-left{
+  text-align: left;
+}
+
+#slide-background-right {
+  text-align: right;
+}
 /* keep full widget on smaller screens */
 @media (max-width: 767px) { 
   body {

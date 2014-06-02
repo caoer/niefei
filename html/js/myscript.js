@@ -160,8 +160,13 @@ function scrolled_menu() {
 //Home Height
 function sliderHeight(){
 	wh = $(window).height();
-	$('#home').css({height:803+74});
+	var body_h = $(window).height();
+	$('#home').css({height:body_h});
+        // demension is 1291 × 909
+        // $('.carousel-inner > .item img').css({height:body_h});
+        // $('.carousel-inner > .item img').css({width:body_h * 1291.0 / 909.0});
 	// $('#home_carousel').css({height:wh-74});
+        $('.home_background').css({"height":body_h});
 }
 
 //Welcome Block Vertical Align
