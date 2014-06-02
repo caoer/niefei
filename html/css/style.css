@@ -247,7 +247,7 @@ a.menu_toggler { display:none;
   height: 100%;
   background: url(../images/home_bg.jpg) no-repeat;
   box-shadow:0 0 250px rgba(0,0,0,0.24) inset;
-  height: 909px;
+  max-height: 909px;
 }
 
 .home_gradient {
@@ -301,7 +301,8 @@ a.menu_toggler { display:none;
 html,body{height:100%;}
 
 .carousel, .item,.active{
-  height:100%;
+  height: 100%;
+  max-height: 909px;
 }
 
 .carousel-inner{
@@ -311,11 +312,12 @@ html,body{height:100%;}
 .carousel-inner > .item > img {
   min-width: 1291px !important;
   min-height: 909px !important;
+  max-height: 909px !important;
 }
 
 .fill{
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
   /*background-position:center;*/
   /*background-size:cover;*/
 }
