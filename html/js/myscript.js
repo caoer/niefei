@@ -113,7 +113,7 @@ jQuery(document).ready(function() {
 // });
 //
 $('.carousel-inner').carousel( {
-  interval: 1000
+  interval: 5000
 });
 	//PrettyPhoto
 	$("a[rel^='prettyPhoto']").prettyPhoto();
