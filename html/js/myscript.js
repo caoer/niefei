@@ -106,12 +106,14 @@ jQuery(document).ready(function() {
     speed: 700
   });
 
+  $("#about_education").click(function() {
+    $("#about").hide("fold", function(){
+      $("#about .container .row .span6").html("xxxxxxxxxxxxxxxxxxxxx");
+      $("#about").show("fold");
+    });
+  });
 
-  // $('.home_background').jCarouselLite({
-  //   btnNext: '.next',
-  //   btnPrev: '.prev'
-  // });
-  //
+  
   $('.carousel-inner').carousel( {
     interval: 5000
   });

@@ -420,6 +420,10 @@ a.down_btn {
   width:100%;
   overflow:hidden;
 }
+
+#portfolio .container {
+  margin: auto;
+}
 #portfolio .parallax_effect {
   position:relative;
   margin-top:-31px;
