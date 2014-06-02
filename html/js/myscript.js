@@ -108,7 +108,7 @@ jQuery(document).ready(function() {
 
   $("#about_education").click(function() {
     $("#about").hide("fold", function(){
-      $("#about .container .row .span6").html("xxxxxxxxxxxxxxxxxxxxx");
+      $("#about .container .row .span6").html("this is an introduction of education");
       $("#about").show("fold");
     });
   });
