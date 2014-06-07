@@ -410,6 +410,7 @@ a.down_btn {
 
 /* __________ Portfolio Item __________ */
 .portfolio_block {padding-top:15px;
+  margin-left: 15px;
 }
 .portfolio_item {
 	position:relative;
@@ -917,6 +918,7 @@ input[type="color"]:focus {
 
 /**** Isotope Filtering ****/
 .isotope-item {
+  margin: 0px;
 }
 .isotope-hidden.isotope-item {
   pointer-events: none;

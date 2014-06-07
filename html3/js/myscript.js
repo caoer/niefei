@@ -102,7 +102,7 @@ jQuery(document).ready(function() {
   $(".jcarousel_block .jCarouselLite").jCarouselLite({
     btnNext: ".jcarousel_next",
     btnPrev: ".jcarousel_prev",
-    auto: 5000000,
+    auto: 5000,
     speed: 700
   });
 
