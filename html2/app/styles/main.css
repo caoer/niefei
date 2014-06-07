@@ -1,0 +1,353 @@
+html {
+  overflow-y: scroll;
+}
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+}
+/* project gallery */
+.grid-sizer { width: 25%; }
+
+.item_gallery {
+  width: 25%; 
+  float: left;
+  position: relative;
+  line-height: 1em;
+}
+
+.image{
+  max-width: 100%;
+  margin: 0;
+  display: block;
+}
+
+.image:after {
+  clear:both;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  color: #fff;
+  display: none;
+}
+
+.overlay .title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.overlay .description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.80);
+  width: 100%;
+  margin: 0;
+}
+
+.overlay .description p {
+  margin: 20px;
+}
+
+.item_gallery:hover .overlay {
+  display: block;
+}
+/* About */
+
+/* ____________________ Sed Ul ____________________ */
+#sed_ul .parallax_effect {
+  position:relative;
+  margin-top: 0;
+  padding:30px 0 36px;
+  /* background-image: url(../images/sed_ul_bg.jpg); */
+  background: #6a6a6a;
+}
+#sed_ul .parallax_effect .container {
+  position:relative;
+  z-index:1;
+  text-align:center;
+}
+#sed_ul .parallax_effect .container h2 {
+  font-weight:300;
+  color:#fff;
+}
+
+/* ___________________ //Sed Ul ___________________ */
+
+/* ____________________ Services ____________________ */
+#services {
+  width:100%;
+  overflow:hidden;
+  padding:0;
+}
+#services .parallax_effect {
+  position:relative;
+  /* background-image: url(../images/service_bg.jpg); */
+  background: #6a6a6a;
+}
+#services .parallax_effect .container {
+  position:relative;
+  z-index:1;
+}
+#services .parallax_effect h2 {color:#fff;
+}
+
+
+.services_block {
+  margin-top:6px;
+  margin-bottom: 20px;
+}
+.services_item {
+  display:block;
+  text-align:center;
+  color:#fff;
+}
+.services_item:hover {color:#fff;
+}
+.icon_block {
+  overflow:hidden;
+  position:relative;
+  margin:0 auto 27px;
+  width:100px;
+  height:100px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.services_item:hover .icon_block {
+  -webkit-transform: translateY(51px);
+  -ms-transform: translateY(51px);
+  transform: translateY(51px);
+}
+.services_item p {
+  margin-bottom:21px;
+  text-transform:uppercase;
+  font-weight:300;
+  line-height:28px;
+  font-size:28px;
+  color:#fff;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.services_item:hover p {
+  -webkit-transform: translateY(-132px);
+  -ms-transform: translateY(-132px);
+  transform: translateY(-132px);
+}
+/* ___________________ //Services ___________________ */
+
+
+/* -------------------- Carousel -------------------- */
+.carousel-inner > .item > img {
+  width:100%;
+}
+
+/* ____________________ Events ____________________ */
+.events_block {
+  position:relative;
+  margin-bottom:25px;
+}
+.center_line_events {
+  position:absolute;
+  z-index:-1;
+  top:0;
+  left:50%;
+  bottom:20px;
+  width:2px;
+  background:#e0e0e0;
+}
+.post_block {
+  width:455px;
+  margin-bottom:20px;
+}
+.right_post.post_block {
+  margin-left:45px;
+}
+.post_block .post_date {
+  position:absolute;
+  z-index:1;
+  top:0;
+  right:-72px;
+  padding:3px 0 5px;
+  width:58px;
+  height:31px;
+  border:3px solid #dedede;
+  background:#fff;
+  text-transform:uppercase;
+  text-align:center;
+  font-weight:700;
+  line-height:22px;
+  font-size:24px;
+  color:#505050;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.right_post.post_block .post_date {
+  right:auto;
+  left:-72px;
+}
+.second_post_block .post_date {
+  top:90px;
+}
+.post_block .post_date span {
+  display:block;
+  font-weight:400;
+  line-height:9px;
+  font-size:10px;
+}
+.post_block .post_date:before {
+  content:'';
+  position:absolute;
+  z-index:-1;
+  left:-26px;
+  top:50%;
+  width:26px;
+  height:2px;
+  background:#dedede;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.right_post.post_block .post_date:before {
+  left:auto;
+  right:-26px;
+}
+.post_block:hover .post_date:before {
+  background:#484848;
+}
+.post_block:hover .post_date {
+  color:#6c6c6c;
+  border:3px solid #4d4d4d;
+}
+.event_img {
+  position:relative;
+  background:#2a2a2a;
+}
+.post_block .zoom {
+  position:absolute;
+  right:10%;
+  top:10%;
+  width:55px;
+  height:55px;
+  margin:-27px -27px 0 0;
+  background:url(../images/zoom.png) no-repeat center center;
+  border:5px solid #fff;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.right_post.post_block .zoom {
+  right:auto;
+  left:10%;
+  margin:-27px 0 0 -27px;
+}
+.post_block .zoom:hover {
+  background:url(../images/zoom_h.png) no-repeat #fff;
+}
+.post_block:hover .zoom {
+  right:50%;
+  top:50%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.right_post.post_block:hover .zoom {
+  right:auto;
+  left:50%;
+}
+.post_block .event_img img {
+  width:100%;
+  opacity: 0.84;
+  filter: alpha(opacity=84);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.post_block:hover .event_img img {
+  opacity: 0.13;
+  filter: alpha(opacity=13);
+}
+.event_description {
+  padding:26px 28px;
+  border-right:3px solid #dedede;
+  border-bottom:3px solid #dedede;
+  border-left:3px solid #dedede;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.post_block:hover .event_description {
+  border-right:3px solid #6a6a6a;
+  border-bottom:3px solid #6a6a6a;
+  border-left:3px solid #6a6a6a;
+}
+.event_description a.title {
+  text-transform:uppercase;
+  font-size:15px;
+  color:#505050;
+}
+.post_block:hover .event_description a.title {color:#191919;
+}
+.event_info {
+  margin-bottom:9px;
+  font-size:12px;
+  color:#ababab;
+}
+.event_description a.read_more {color:#505050;
+}
+.post_block .event_description a.read_more:hover {color:#6a6a6a;
+}
+
+/* ___________________ //Events ___________________ */
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  .grid-sizer { width: 33.33%; }
+  .item_gallery { width: 33.33%; }
+}
+
+@media screen and (max-width: 720px) {
+  .grid-sizer { width: 50%; }
+  .item_gallery { width: 50%; }
+}
+
+@media screen and (max-width: 480px) {
+  .grid-sizer { width: 100%; }
+  .item_gallery { width: 100%; }
+}

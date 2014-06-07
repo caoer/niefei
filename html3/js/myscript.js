@@ -27,7 +27,7 @@ function calculateScroll() {
 };
 
 
-jQuery(document).ready(function() {
+jQuery(document).ready(function() {		
   //Fixed Menu
   if (jQuery('.fixed-menu').size() && fixed_menu == true) {
 
@@ -41,7 +41,7 @@ jQuery(document).ready(function() {
 
   //MobileMenu
   jQuery('#top header .container').append('<a href="javascript:void(0)" class="menu_toggler"/>');
-  jQuery('#top').append('<div class="mobile_menu_wrapper"><ul class="mobile_menu container"/></div>');
+  jQuery('#top').append('<div class="mobile_menu_wrapper"><ul class="mobile_menu container"/></div>');	
   jQuery('.mobile_menu').html(jQuery('#top header').find('.navmenu').html());
   jQuery('.mobile_menu_wrapper').hide();
   jQuery('.menu_toggler').click(function(){
@@ -49,13 +49,13 @@ jQuery(document).ready(function() {
   });
 
   // if single_page
-  if (jQuery("#page").hasClass("single_page")) {
+  if (jQuery("#page").hasClass("single_page")) {			
   }
   else {
     $(window).scroll(function(event) {
       calculateScroll();
     });
-    $('.navmenu ul li a, .mobile_menu ul li a, .down_btn').click(function() {
+    $('.navmenu ul li a, .mobile_menu ul li a, .down_btn').click(function() {  
       $('html, body').animate({scrollTop: $(this.hash).offset().top - 74}, 1000);
       return false;
     });
@@ -78,7 +78,7 @@ jQuery(document).ready(function() {
 
   //Contact form
   $("#ajax-contact-form").submit(function() {
-    var str = $(this).serialize();
+    var str = $(this).serialize();		
     $.ajax({
       type: "POST",
       url: "contact_form/contact_process.php",
@@ -102,7 +102,7 @@ jQuery(document).ready(function() {
   $(".jcarousel_block .jCarouselLite").jCarouselLite({
     btnNext: ".jcarousel_next",
     btnPrev: ".jcarousel_prev",
-    auto: 5000,
+    auto: 5000000,
     speed: 700
   });
 
@@ -113,10 +113,7 @@ jQuery(document).ready(function() {
     });
   });
 
-  
-  $('.carousel-inner').carousel( {
-    interval: 5000
-  });
+
   //PrettyPhoto
   $("a[rel^='prettyPhoto']").prettyPhoto();
 
@@ -162,17 +159,25 @@ function scrolled_menu() {
 //Home Height
 function sliderHeight(){
   wh = $(window).height();
-  var body_h = $(window).height();
-  // $('#home').css({height:body_h});
-  // demension is 1291 × 909
-  // $('.home_background').css({"height":body_h});
+  $('#home').css({height:wh});
+
 }
 
 //Welcome Block Vertical Align
 function mymargtop() {
   var body_h = $(window).height();
-  var container_h = $('.welcome_text').height();
-  var marg_top = Math.abs((body_h - container_h)/2);
-  $('.welcome_text').css('padding-top', marg_top);
-  $('.welcome_text').css('padding-bottom', marg_top);
+  var container_h = $('.welcome_block').height();	
+  var marg_top = Math.abs((body_h - container_h)/2);	
+  $('.welcome_block').css('padding-top', marg_top);
+  $('.welcome_block').css('padding-bottom', marg_top);
 }
+
+
+
+
+
+
+
+
+
+
