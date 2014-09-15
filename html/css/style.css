@@ -482,10 +482,10 @@ a.btn_load_more:hover {
 	transition: transform 0.4s;
 }
 .portfolio_item:hover .hover_img img {
-	-webkit-transform: translateX(25%);
-	-moz-transform: translateX(25%);
-	-ms-transform: translateX(25%);
-	transform: translateX(25%);
+	-webkit-transform: translateX(0%);
+	-moz-transform: translateX(0%);
+	-ms-transform: translateX(0%);
+	transform: translateX(0%);
 }
 .portfolio_item .description {
 	background: none repeat scroll 0 0 #808080;
@@ -495,29 +495,40 @@ a.btn_load_more:hover {
     top: 0;
 	
 	height: 100%;
-	width: 191px;
+	width: 320px;
 	opacity: 0;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transform-origin: 0 0;
-	-moz-transform-origin: 0 0;
-	transform-origin: 0 0;
-	-webkit-transform: rotateY(-90deg);
-	-moz-transform: rotateY(-90deg);
-	transform: rotateY(-90deg);
-	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
-	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
-	transition: transform 0.4s, opacity 0.1s 0.3s;
+	/* -webkit-backface-visibility: hidden; */
+	/* -moz-backface-visibility: hidden; */
+	/* backface-visibility: hidden; */
+	/* -webkit-transform-origin: 0 0; */
+	/* -moz-transform-origin: 0 0; */
+	/* transform-origin: 0 0; */
+	/* -webkit-transform: rotateY(-90deg); */
+	/* -moz-transform: rotateY(-90deg); */
+	/* transform: rotateY(-90deg); */
+	/* -webkit-transition: -webkit-transform 0.8s, opacity 0.4s 0.5s; */
+	/* -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s; */
+	/* transition: transform 0.4s, opacity 0.1s 0.3s; */
+  /*  */
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+
 }
 .portfolio_item:hover .description {
-	opacity: 1;
-	-webkit-transform: rotateY(0deg);
-	-moz-transform: rotateY(0deg);
-	transform: rotateY(0deg);
-	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
-	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
-	transition: transform 0.4s, opacity 0.1s;
+	opacity: 0.7;
+	/* -webkit-transform: rotateY(0deg); */
+	/* -moz-transform: rotateY(0deg); */
+	/* transform: rotateY(0deg); */
+	/* -webkit-transition: -webkit-transform 0.4s, opacity 0.0.3s; */
+	/* -moz-transition: -moz-transform 0.4s, opacity 0.0.3s; */
+	/* transition: transform 0.4s, opacity 0.0.3s; */
+
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
 }
 .portfolio_item .description_in {
 	padding:17px 21px 20px;
