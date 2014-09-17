@@ -533,6 +533,7 @@ a.btn_load_more:hover {
 .portfolio_item .description_in {
 	padding:17px 21px 20px;
 	color:#fff;
+  text-align: center;
 }
 .portfolio_item .description_in p {
 	margin:0 0 11px;
